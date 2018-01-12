@@ -105,7 +105,7 @@ Some examples are:
 
 This form looks good when describing the version of a software
 component for humans to read
-(eg. C<Changes> file, C<--version> output, etc.)
+(eg. at C<Changes> file, C<--version> output, etc.)
 
 =head2 normal3
 
@@ -116,7 +116,7 @@ at least 3 components, and no superfluous trailing 0.
 
 Some examples are:
 
-    V          version->parse(V)->normal2()
+    V          version->parse(V)->normal3()
 
     0.1        0.100.0
     v0.1       0.1.0
@@ -128,7 +128,7 @@ Some examples are:
     v0.1.0.0   0.1.0
 
 This form is appropriate for distribution tarball names
-(like "version-Normal-0.1.0.tar.gz") – only digits and dots
+(like C<"version-Normal-0.1.0.tar.gz">) – only digits and dots
 and no need for special interpretation of a leading-v.
 
 =head1 SEE ALSO
